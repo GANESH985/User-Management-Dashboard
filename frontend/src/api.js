@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API = axios.create({ baseURL: process.env.REACT_APP_API_URL || 'http://localhost:5000/api' });
+const API = axios.create({ baseURL: process.env.REACT_APP_API_URL || 'https://user-management-dashboard-5g3w.onrender.com/' });
 
 export const fetchUsers = () => API.get('/users');
 export const fetchUser = (id) => API.get(`/users/${id}`);
